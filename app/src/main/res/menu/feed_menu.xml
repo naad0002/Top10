@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Item1"
+        android:icon="@drawable/ic_mainmenu"
+        android:id="@+id/mainmenu"
+    app:showAsAction="ifRoom"/>
+
+    <item android:title="Filter"
+        android:id="@+id/filter"
+        app:showAsAction="never">
+<menu>
+
+    <item
+        android:id="@+id/Topseries"
+        android:title="Top series" />
+    <item
+        android:id="@+id/Topsongs"
+        android:title="Top songs" />
+    <group
+        android:checkableBehavior="single"
+        android:enabled="true"
+        android:visible="true">
+        <item
+            android:checked="true"
+            android:title="Top 10" />
+        <item android:title="Top 25" />
+    </group>
+</menu>
+</item>
+    </menu>
+
+
